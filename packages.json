@@ -24,7 +24,11 @@
 			},
 			"afnix": {
 				"debian-repo": "ssh://git.debian.org/git/collab-maint/afnix.git"
-			}
+			},
+			"csmith": {
+				"debian-repo": "ssh://git.debian.org/git/collab-maint/csmith.git",
+				"upstream-repo": "https://github.com/csmith-project/csmith.git"
+			},
 		},
 		"x": {
 			"sxhkd": {
