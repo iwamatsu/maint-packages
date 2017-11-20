@@ -1,0 +1,61 @@
+{
+	"config": {
+		"base_dir": "/home/iwamatsu/dev/debian/maint",
+		"user_name": "Nobuhiro Iwamatsu",
+		"user_email": "iwamatsu@debian.org"
+	},
+	"packages": {
+		"misc": {
+			"mmc-utils": {
+				"debian-repo": "ssh://git.debian.org/git/collab-maint/mmc-utils.git",
+				"upstream-repo": "https://git.kernel.org/pub/scm/linux/kernel/git/cjb/mmc-utils.git"
+			},
+			"lz4": {
+				"debian-repo": "ssh://git.debian.org/git/collab-maint/lz4.git",
+				"upstream-repo": "https://github.com/lz4/lz4.git"
+			},
+			"neofetch": {
+				"debian-repo": "ssh://git.debian.org/git/collab-maint/neofetch.git",
+				"upstream-repo": "https://github.com/dylanaraps/neofetch.git"
+			},
+			"mozc": {
+				"debian-repo": "ssh://git.debian.org/git/collab-maint/mozc.git",
+				"upstream-repo": "https://github.com/google/mozc.git"
+			},
+			"afnix": {
+				"debian-repo": "ssh://git.debian.org/git/collab-maint/afnix.git"
+			}
+		},
+		"x": {
+			"sxhkd": {
+				"debian-repo": "ssh://git.debian.org/git/collab-maint/sxhkd.git",
+				"upstream-repo": "https://github.com/baskerville/sxhkd.git"
+			}
+		},
+		"erlang": {
+			"meck": {
+				"debian-repo": "ssh://git.debian.org/git/pkg-leofs/erlang-meck.git",
+				"upstream-repo": "https://github.com/eproxus/meck.git"
+			},
+			"cuttlefish": {
+				"debian-repo": "ssh://git.debian.org/git/pkg-leofs/erlang-cuttlefish.git",
+				"upstream-repo": "https://github.com/basho/cuttlefish.git"
+			}
+		},
+		"font": {
+			"fonts-hanazono": {
+				"debian-repo": "ssh://git.debian.org/git/pkg-fonts/fonts-hanazono.git"
+			}
+		},
+		"golang": {
+			"golang-github-moul-http2curl": {
+				"debian-repo": "ssh://git.debian.org/git/pkg-go/packages/golang-github-moul-http2curl.git",
+				"upstream-repo": "https://github.com/basho/cuttlefish.git"
+			},
+			"golang-github-rifflock-lfshook": {
+				"debian-repo": "ssh://git.debian.org/git/pkg-go/packages/golang-github-rifflock-lfshook.git",
+				"upstream-repo": "https://github.com/rifflock/lfshook.git"
+			}
+		}
+	}
+}
