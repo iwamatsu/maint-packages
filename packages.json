@@ -29,6 +29,10 @@
 				"debian-repo": "ssh://git.debian.org/git/collab-maint/csmith.git",
 				"upstream-repo": "https://github.com/csmith-project/csmith.git"
 			},
+			"lemonbar": {
+				"debian-repo": "ssh://git.debian.org/git/collab-maint/lemonbar.git",
+				"upstream-repo": "https://github.com/LemonBoy/bar.git"
+			}
 		},
 		"x": {
 			"sxhkd": {
