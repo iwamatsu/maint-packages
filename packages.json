@@ -103,6 +103,10 @@
 			"golang-github-go-ini-ini": {
 				"debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-go-ini-ini.git",
 				"upstream-repo": "https://github.com/go-ini/ini"
+			},
+			"golang-github-lestrrat-go-pdebug": {
+				"debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-lestrrat-go-pdebug.git",
+				"upstream-repo": "https://github.com/lestrrat/go-pdebug"
 			}
 		}
 	}
