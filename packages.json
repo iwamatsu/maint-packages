@@ -99,6 +99,10 @@
 			"golang-github-asaskevich-govalidator": {
 				"debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-asaskevich-govalidator.git",
 				"upstream-repo": "https://github.com/asaskevich/govalidator.git"
+			},
+			"golang-github-go-ini-ini": {
+				"debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-go-ini-ini.git",
+				"upstream-repo": "https://github.com/go-ini/ini"
 			}
 		}
 	}
