@@ -79,6 +79,10 @@
 			"golang-github-nlopes-slack": {
 				"debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-nlopes-slack.git",
 				"upstream-repo": "https://github.com/nlopes/slack"
+			},
+			"golang-github-kotakanbe-logrus-prefixed-formatter": {
+				"debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-kotakanbe-logrus-prefixed-formatter.git",
+				"upstream-repo": "https://github.com/kotakanbe/logrus-prefixed-formatter"
 			}
 		}
 	}
