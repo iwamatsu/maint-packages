@@ -95,6 +95,10 @@
 			"golang-github-labstack-gommon": {
 				"debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-labstack-gommon.git",
 				"upstream-repo": "https://github.com/labstack/gommon.git"
+			},
+			"golang-github-asaskevich-govalidator": {
+				"debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-asaskevich-govalidator.git",
+				"upstream-repo": "https://github.com/asaskevich/govalidator.git"
 			}
 		}
 	}
