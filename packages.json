@@ -107,6 +107,10 @@
 			"golang-github-lestrrat-go-pdebug": {
 				"debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-lestrrat-go-pdebug.git",
 				"upstream-repo": "https://github.com/lestrrat/go-pdebug"
+			},
+			"golang-github-nsf-termbox-go": {
+				"debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-nsf-termbox-go.git",
+				"upstream-repo": "https://github.com/nsf/termbox-go"
 			}
 		}
 	}
