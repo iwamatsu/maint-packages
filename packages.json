@@ -71,6 +71,10 @@
 			"golang-github-knqyf263-go-deb-version": {
 				"debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-knqyf263-go-deb-version.git",
 				"upstream-repo": "https://github.com/knqyf263/go-deb-version.git"
+			},
+			"golang-github-knqyf263-go-rpm-version": {
+				"debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-knqyf263-go-rpm-version.git",
+				"upstream-repo": "https://github.com/knqyf263/go-rpm-version.git"
 			}
 		}
 	}
