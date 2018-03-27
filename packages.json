@@ -111,6 +111,10 @@
 			"golang-github-nsf-termbox-go": {
 				"debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-nsf-termbox-go.git",
 				"upstream-repo": "https://github.com/nsf/termbox-go"
+			},
+			"golang-github-tarm-serial": {
+				"debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-tarm-serial.git",
+				"upstream-repo": "https://github.com/tarm/serial"
 			}
 		}
 	}
