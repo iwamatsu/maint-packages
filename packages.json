@@ -115,6 +115,10 @@
 			"golang-github-tarm-serial": {
 				"debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-tarm-serial.git",
 				"upstream-repo": "https://github.com/tarm/serial"
+			},
+			"golang-github-shirou-gopsutil": {
+				"debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-shirou-gopsutil.git",
+				"upstream-repo": "https://github.com/shirou/gopsutil"
 			}
 		}
 	}
