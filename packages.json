@@ -189,6 +189,10 @@
             "mruby": {
                 "debian-repo": "https://github.com/mruby-debian/mruby.git",
                 "upstream-repo": "https://github.com/mruby/mruby.git"
+            },
+            "ruby-snmp": {
+                "debian-repo": "https://salsa.debian.org/ruby-team/ruby-snmp.git",
+                "upstream-repo": "https://github.com/hallidave/ruby-snmp.git"
             }
         }
     }
