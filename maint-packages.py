@@ -147,7 +147,7 @@ if __name__ == '__main__':
 
     if "section" in arg_result:
         section = arg_result["section"]
-        
+
     if arg_result['action'] == 'delete':
         packages_data.pop(package_name)
     elif arg_result['action'] == 'add':
@@ -155,11 +155,15 @@ if __name__ == '__main__':
             exit()
         if len(package_name) == 0:
             exit()
+
+        if section not in maint_data["packages"]:
+            maint_data["packages"][section] = {}
+
         if 'upstream_repo' in arg_result:
             d = {'debian-repo': debian_repo, 'upstream-repo': arg_result['upstream_repo']}
         else:
             d = {'debian-repo': debian_repo}
-        
+
         maint_data["packages"][section][package_name] = d
 
     else: # add or update
