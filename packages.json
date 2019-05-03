@@ -1,125 +1,189 @@
 {
-	"config": {
-		"base_dir": "/home/iwamatsu/dev/debian/maint",
-		"user_name": "Nobuhiro Iwamatsu",
-		"user_email": "iwamatsu@debian.org"
-	},
-	"packages": {
-		"misc": {
-			"mmc-utils": {
-				"debian-repo": "ssh://git.debian.org/git/collab-maint/mmc-utils.git",
-				"upstream-repo": "https://git.kernel.org/pub/scm/linux/kernel/git/cjb/mmc-utils.git"
-			},
-			"lz4": {
-				"debian-repo": "ssh://git.debian.org/git/collab-maint/lz4.git",
-				"upstream-repo": "https://github.com/lz4/lz4.git"
-			},
-			"neofetch": {
-				"debian-repo": "ssh://git.debian.org/git/collab-maint/neofetch.git",
-				"upstream-repo": "https://github.com/dylanaraps/neofetch.git"
-			},
-			"mozc": {
-				"debian-repo": "ssh://git.debian.org/git/collab-maint/mozc.git",
-				"upstream-repo": "https://github.com/google/mozc.git"
-			},
-			"afnix": {
-				"debian-repo": "ssh://git.debian.org/git/collab-maint/afnix.git"
-			},
-			"csmith": {
-				"debian-repo": "ssh://git.debian.org/git/collab-maint/csmith.git",
-				"upstream-repo": "https://github.com/csmith-project/csmith.git"
-			},
-			"lemonbar": {
-				"debian-repo": "ssh://git.debian.org/git/collab-maint/lemonbar.git",
-				"upstream-repo": "https://github.com/LemonBoy/bar.git"
-			}
-		},
-		"x": {
-			"sxhkd": {
-				"debian-repo": "ssh://git.debian.org/git/collab-maint/sxhkd.git",
-				"upstream-repo": "https://github.com/baskerville/sxhkd.git"
-			}
-		},
-		"erlang": {
-			"meck": {
-				"debian-repo": "ssh://git.debian.org/git/pkg-leofs/erlang-meck.git",
-				"upstream-repo": "https://github.com/eproxus/meck.git"
-			},
-			"cuttlefish": {
-				"debian-repo": "ssh://git.debian.org/git/pkg-leofs/erlang-cuttlefish.git",
-				"upstream-repo": "https://github.com/basho/cuttlefish.git"
-			}
-		},
-		"font": {
-			"fonts-hanazono": {
-				"debian-repo": "ssh://git.debian.org/git/pkg-fonts/fonts-hanazono.git"
-			}
-		},
-		"golang": {
-			"golang-github-moul-http2curl": {
-				"debian-repo": "ssh://git.debian.org/git/pkg-go/packages/golang-github-moul-http2curl.git",
-				"upstream-repo": "https://github.com/basho/cuttlefish.git"
-			},
-			"golang-github-rifflock-lfshook": {
-				"debian-repo": "ssh://git.debian.org/git/pkg-go/packages/golang-github-rifflock-lfshook.git",
-				"upstream-repo": "https://github.com/rifflock/lfshook.git"
-			},
-			"golang-github-valyala-fasthttp": {
-				"debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-valyala-fasthttp.git",
-				"upstream-repo": "https://github.com/valyala/fasthttp.git"
-			},
-			"golang-github-knqyf263-go-deb-version": {
-				"debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-knqyf263-go-deb-version.git",
-				"upstream-repo": "https://github.com/knqyf263/go-deb-version.git"
-			},
-			"golang-github-knqyf263-go-rpm-version": {
-				"debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-knqyf263-go-rpm-version.git",
-				"upstream-repo": "https://github.com/knqyf263/go-rpm-version.git"
-			},
-			"golang-github-nlopes-slack": {
-				"debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-nlopes-slack.git",
-				"upstream-repo": "https://github.com/nlopes/slack"
-			},
-			"golang-github-kotakanbe-logrus-prefixed-formatter": {
-				"debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-kotakanbe-logrus-prefixed-formatter.git",
-				"upstream-repo": "https://github.com/kotakanbe/logrus-prefixed-formatter"
-			},
-			"golang-github-labstack-echo.v2": {
-				"debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-labstack-echo.v2.git",
-				"upstream-repo": "https://github.com/labstack/echo"
-			},
-			"golang-github-labstack-echo.v3": {
-				"debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-labstack-echo.v3.git",
-				"upstream-repo": "https://github.com/labstack/echo"
-			},
-			"golang-github-labstack-gommon": {
-				"debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-labstack-gommon.git",
-				"upstream-repo": "https://github.com/labstack/gommon.git"
-			},
-			"golang-github-asaskevich-govalidator": {
-				"debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-asaskevich-govalidator.git",
-				"upstream-repo": "https://github.com/asaskevich/govalidator.git"
-			},
-			"golang-github-go-ini-ini": {
-				"debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-go-ini-ini.git",
-				"upstream-repo": "https://github.com/go-ini/ini"
-			},
-			"golang-github-lestrrat-go-pdebug": {
-				"debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-lestrrat-go-pdebug.git",
-				"upstream-repo": "https://github.com/lestrrat/go-pdebug"
-			},
-			"golang-github-nsf-termbox-go": {
-				"debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-nsf-termbox-go.git",
-				"upstream-repo": "https://github.com/nsf/termbox-go"
-			},
-			"golang-github-tarm-serial": {
-				"debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-tarm-serial.git",
-				"upstream-repo": "https://github.com/tarm/serial"
-			},
-			"golang-github-shirou-gopsutil": {
-				"debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-shirou-gopsutil.git",
-				"upstream-repo": "https://github.com/shirou/gopsutil"
-			}
-		}
-	}
+    "config": {
+        "base_dir": "/home/iwamatsu/dev/debian/maint",
+        "user_name": "Nobuhiro Iwamatsu",
+        "user_email": "iwamatsu@debian.org"
+    },
+    "packages": {
+        "misc": {
+            "mmc-utils": {
+                "debian-repo": "https://salsa.debian.org/debian/mmc-utils.git",
+                "upstream-repo": "https://git.kernel.org/pub/scm/linux/kernel/git/cjb/mmc-utils.git"
+            },
+            "lz4": {
+                "debian-repo": "https://salsa.debian.org/debian/lz4.git",
+                "upstream-repo": "https://github.com/lz4/lz4.git"
+            },
+            "neofetch": {
+                "debian-repo": "https://salsa.debian.org/debian/neofetch.git",
+                "upstream-repo": "https://github.com/dylanaraps/neofetch.git"
+            },
+            "afnix": {
+                "debian-repo": "https://salsa.debian.org/debian/afnix.git",
+                "__commnet": "afnix does not have repository"
+            },
+            "csmith": {
+                "debian-repo": "https://salsa.debian.org/debian/csmith.git",
+                "upstream-repo": "https://github.com/csmith-project/csmith.git"
+            },
+            "lemonbar": {
+                "debian-repo": "https://salsa.debian.org/debian/lemonbar.git",
+                "upstream-repo": "https://github.com/LemonBoy/bar.git"
+            },
+            "mozc": {
+                "debian-repo": "https://salsa.debian.org/debian/mozc.git",
+                "upstream-repo": "https://github.com/google/mozc.git"
+            }
+        },
+        "x": {
+            "sxhkd": {
+                "debian-repo": "https://salsa.debian.org/debian/sxhkd.git",
+                "upstream-repo": "https://github.com/baskerville/sxhkd.git"
+            }
+        },
+        "erlang": {
+            "meck": {
+                "debian-repo": "https://salsa.debian.org/erlang-team/packages/erlang-meck.git",
+                "upstream-repo": "https://github.com/eproxus/meck.git"
+            },
+            "cuttlefish": {
+                "debian-repo": "https://salsa.debian.org/erlang-team/packages/erlang-cuttlefish",
+                "upstream-repo": "https://github.com/basho/cuttlefish.git"
+            }
+        },
+        "golang": {
+            "golang-github-google-subcommands": {
+                "debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-google-subcommands.git",
+                "upstream-repo": "https://github.com/google/subcommands.git"
+            },
+            "golang-github-olekukonko-tablewriter": {
+                "debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-olekukonko-tablewriter.git",
+                "upstream-repo": "https://github.com/olekukonko/tablewriter.git"
+            },
+            "golang-github-knqyf263-go-cpe": {
+                "debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-knqyf263-go-cpe.git",
+                "upstream-repo": "https://github.com/knqyf263/go-cpe.git"
+            },
+            "golang-github-labstack-echo.v3": {
+                "debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-labstack-echo.v3.git",
+                "upstream-repo": "https://github.com/labstack/echo.git"
+            },
+            "golang-github-labstack-echo.v2": {
+                "debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-labstack-echo.v2.git",
+                "upstream-repo": "https://github.com/labstack/echo.git"
+            },
+            "go-cpe-dictionary": {
+                "debian-repo": "git@salsa.debian.org:go-team/packages/go-cpe-dictionary.git",
+                "upstream-repo": "https://github.com/kotakanbe/go-cpe-dictionary.git"
+            },
+            "golang-github-knqyf263-go-rpm-version": {
+                "debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-knqyf263-go-rpm-version.git",
+                "upstream-repo": "https://github.com/knqyf263/go-rpm-version.git"
+            },
+            "golang-github-nlopes-slack": {
+                "debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-nlopes-slack.git",
+                "upstream-repo": "https://github.com/nlopes/slack"
+            },
+            "golang-github-jinzhu-gorm": {
+                "debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-jinzhu-gorm.git",
+                "upstream-repo": "https://github.com/jinzhu/gorm.git"
+            },
+            "vuls": {
+                "debian-repo": "git@salsa.debian.org:go-team/packages/vuls.git",
+                "upstream-repo": "https://github.com/future-architect/vuls"
+            },
+            "goval-dictionary": {
+                "debian-repo": "git@salsa.debian.org:go-team/packages/goval-dictionary.git",
+                "upstream-repo": "https://github.com/kotakanbe/goval-dictionary.git"
+            },
+            "golang-github-kotakanbe-go-pingscanner": {
+                "debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-kotakanbe-go-pingscanner.git",
+                "upstream-repo": "https://github.com/kotakanbe/go-pingscanner.git"
+            },
+            "golang-github-valyala-fasthttp": {
+                "debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-valyala-fasthttp.git",
+                "upstream-repo": "https://github.com/valyala/fasthttp.git"
+            },
+            "peco": {
+                "debian-repo": "git@salsa.debian.org:go-team/packages/peco.git",
+                "upstream-repo": "https://github.com/peco/peco.git"
+            },
+            "golang-github-k0kubun-pp": {
+                "debian-repo": "git@salsa.debian.org:pkg-go-team/packages/golang-github-k0kubun-pp.git",
+                "upstream-repo": "https://github.com/k0kubun/pp.git"
+            },
+            "golang-github-dgrijalva-jwt-go": {
+                "debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-dgrijalva-jwt-go.git",
+                "upstream-repo": "https://github.com/dgrijalva/jwt-go.git"
+            },
+            "golang-github-valyala-fasttemplate": {
+                "debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-valyala-fasttemplate.git",
+                "upstream-repo": "https://github.com/valyala/fasttemplate"
+            },
+            "golang-github-shirou-gopsutil": {
+                "debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-shirou-gopsutil.git",
+                "upstream-repo": "https://github.com/shirou/gopsutil.git"
+            },
+            "golang-github-valyala-bytebufferpool": {
+                "debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-valyala-bytebufferpool.git",
+                "upstream-repo": "https://github.com/valyala/bytebufferpool.git"
+            },
+            "golang-github-asaskevich-govalidator": {
+                "debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-asaskevich-govalidator.git",
+                "upstream-repo": "https://github.com/asaskevich/govalidator.git"
+            },
+            "golang-github-gosuri-uitable": {
+                "debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-gosuri-uitable.git",
+                "upstream-repo": "https://github.com/gosuri/uitable"
+            },
+            "go-cve-dictionary": {
+                "debian-repo": "git@salsa.debian.org:go-team/packages/go-cve-dictionary.git",
+                "upstream-repo": "https://github.com/kotakanbe/go-cve-dictionary"
+            },
+            "golang-github-mattn-go-sqlite3": {
+                "debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-mattn-go-sqlite3.git",
+                "upstream-repo": "https://github.com/mattn/go-sqlite3.git"
+            },
+            "gost": {
+                "debian-repo": "git@salsa.debian.org:go-team/packages/gost.git",
+                "upstream-repo": "https://github.com/knqyf263/gost.git"
+            },
+            "golang-gopkg-cheggaaa-pb.v1": {
+                "debian-repo": "git@salsa.debian.org:go-team/packages/golang-gopkg-cheggaaa-pb.v1.git",
+                "upstream-repo": "https://github.com/cheggaaa/pb.git"
+            },
+            "golang-github-go-ini-ini": {
+                "debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-go-ini-ini.git",
+                "upstream-repo": "https://github.com/go-ini/ini"
+            },
+            "golang-github-mattn-go-colorable": {
+                "debian-repo": "git@salsa.debian.org:pkg-go-team/golang-github-mattn-go-colorable.git",
+                "upstream-repo": "https://github.com/mattn/go-colorable.git"
+            },
+            "golang-github-labstack-gommon": {
+                "debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-labstack-gommon.git",
+                "upstream-repo": "https://github.com/labstack/gommon.git"
+            },
+            "golang-github-ymomoi-goval-parser": {
+                "debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-ymomoi-goval-parser.git",
+                "upstream-repo": "https://github.com/ymomoi/goval-parser.git"
+            },
+            "golang-github-rifflock-lfshook": {
+                "debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-rifflock-lfshook.git",
+                "upstream-repo": "https://github.com/rifflock/lfshook.git"
+            },
+            "golang-github-kotakanbe-logrus-prefixed-formatter": {
+                "debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-kotakanbe-logrus-prefixed-formatter.git",
+                "upstream-repo": "https://github.com/kotakanbe/logrus-prefixed-formatter"
+            },
+            "golang-eclipse-paho": {
+                "debian-repo": "git@salsa.debian.org:go-team/packages/golang-eclipse-paho.git",
+                "upstream-repo": "https://github.com/eclipse/paho.mqtt.golang.git"
+            },
+            "golang-github-knqyf263-go-deb-version": {
+                "debian-repo": "git@salsa.debian.org:go-team/packages/golang-github-knqyf263-go-deb-version.git",
+                "upstream-repo": "https://github.com/knqyf263/go-deb-version.git"
+            }
+        }
+    }
 }
