@@ -33,6 +33,9 @@
             "mozc": {
                 "debian-repo": "https://salsa.debian.org/debian/mozc.git",
                 "upstream-repo": "https://github.com/google/mozc.git"
+            },
+            "fbterm": {
+                "debian-repo": "https://salsa.debian.org/debian/fbterm.git"
             }
         },
         "x": {
@@ -42,11 +45,11 @@
             }
         },
         "erlang": {
-            "meck": {
+            "erlang-meck": {
                 "debian-repo": "https://salsa.debian.org/erlang-team/packages/erlang-meck.git",
                 "upstream-repo": "https://github.com/eproxus/meck.git"
             },
-            "cuttlefish": {
+            "erlang-cuttlefish": {
                 "debian-repo": "https://salsa.debian.org/erlang-team/packages/erlang-cuttlefish",
                 "upstream-repo": "https://github.com/basho/cuttlefish.git"
             }
