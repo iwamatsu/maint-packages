@@ -9,7 +9,7 @@ from docopt import docopt
 __doc__ = """{f}
 
 Usage:
-    {f} <fname> [-v | --verbose] \
+{f} <fname> [-v | --verbose] \
 [-a | --add] \
 [-c | --change] \
 [-d | --delete] \
@@ -18,7 +18,7 @@ Usage:
 [-s | --section <section_name>] \
 [-r | --repo <debian_repo>] \
 [-u | --upstream <upstream_repo>]
-    {f} -h | --help
+{f} -h | --help
 
 Options:
     -a --add                        Add data 
@@ -103,6 +103,8 @@ def build_world(base_dir, maint_data):
                 os.chdir(pkg)
                 cmd = "git remote add upstream %s" % upstream_repo
                 subprocess.call(cmd.split())
+                cmd = "git remote update upstream"
+                subprocess.call(cmd.split())
             except:
                 print ('No upstream repo. tar ball only?')
 
@@ -113,14 +115,12 @@ if __name__ == '__main__':
     if len(arg_result) == 0:
         exit()
 
-    filename = ""
     if "config_file" in arg_result:
         filename = arg_result['config_file']
-    else:
-        exit()
 
-    conf = open(filename, 'r')
-    maint_data = json.load(conf)
+    maint_data = {}
+    with open(filename, 'r') as conf:
+        maint_data = json.load(conf)
 
     base_dir = maint_data['config']['base_dir']
     user_name = maint_data['config']['user_name']
@@ -151,11 +151,14 @@ if __name__ == '__main__':
     if arg_result['action'] == 'delete':
         packages_data.pop(package_name)
     elif arg_result['action'] == 'add':
+        # need section name
         if len(section) == 0:
             exit()
+        # need package name
         if len(package_name) == 0:
             exit()
 
+        # check section in data
         if section not in maint_data["packages"]:
             maint_data["packages"][section] = {}
 
