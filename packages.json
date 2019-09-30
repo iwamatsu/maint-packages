@@ -36,6 +36,7 @@
             },
             "fbterm": {
                 "debian-repo": "https://salsa.debian.org/debian/fbterm.git"
+                "upstream-repo": "https://github.com/iwamatsu/fbterm.git"
             }
         },
         "x": {
@@ -196,6 +197,16 @@
             "ruby-snmp": {
                 "debian-repo": "https://salsa.debian.org/ruby-team/ruby-snmp.git",
                 "upstream-repo": "https://github.com/hallidave/ruby-snmp.git"
+            }
+        },
+        "bluetooth": {
+            "bluez": {
+                "debian-repo": "https://salsa.debian.org/bluetooth-team/bluez.git",
+                "upstream-repo": "https://git.kernel.org/pub/scm/bluetooth/bluez.git"
+            },
+            "sbc": {
+                "debian-repo": "https://salsa.debian.org/bluetooth-team/pybluez.git",
+                "upstream-repo": "https://github.com/pybluez/pybluez.git"
             }
         }
     }

@@ -27,8 +27,8 @@ Options:
     -b --build                      Build environment
     -s --section <SECTION_NAME>     Section name
     -p --package <PACKAGE_NAME>     Package name
-    -r --repo <DEBIAN_REPO>         Debian repository name
-    -u --upstream <UPSTREAM_REPO>   Upstream repository name
+    -r --repo <DEBIAN_REPO>         Debian repository
+    -u --upstream <UPSTREAM_REPO>   Upstream repository
     -h --help                       Show this screen and exit.
 """.format(f=__file__)
 
@@ -67,7 +67,6 @@ def arg_parse():
         set_data.setdefault("upstream_repo", args['--upstream'][0])
 
     return set_data
-
 
 def build_world(base_dir, maint_data):
     import subprocess
@@ -131,46 +130,65 @@ if __name__ == '__main__':
         exit()
 
     section = ""
-    package_data = {}
     package_name = ""
     debian_repo = ""
-
-    if "package" in arg_result:
-        package_name = arg_result["package"]
-    else:
-        exit()
-
-    if "debian_repo" in arg_result:
-        debian_repo = arg_result['debian_repo']
-    else:
-        exit()
+    upstream_repo = ""
+    package_data = {}
 
     if "section" in arg_result:
         section = arg_result["section"]
 
+    if "package" in arg_result:
+        package_name = arg_result["package"]
+
+    if "debian_repo" in arg_result:
+        debian_repo = arg_result['debian_repo']
+
+    if 'upstream_repo' in arg_result:
+        upstream_repo = arg_result['upstream_repo']
+
+    # check section in data
+    if 'packages' not in maint_data:
+        maint_data['packages'] = {}
+
     if arg_result['action'] == 'delete':
-        packages_data.pop(package_name)
-    elif arg_result['action'] == 'add':
-        # need section name
-        if len(section) == 0:
-            exit()
-        # need package name
         if len(package_name) == 0:
+            exit()
+
+        if len(section):
+            packages_data = maint_data["packages"][section].pop(package_name)
+        else:
+            for __section in maint_data["packages"]:
+                for __package_name in maint_data["packages"][__section]:
+                    if __package_name == package_name:
+                         maint_data["packages"][section].pop(package_name)
+
+    elif arg_result['action'] == 'add':
+        if len(section) == 0:
+            section = "unknown"
+        if len(package_name) == 0:
+            exit()
+        if len(debian_repo) == 0:
             exit()
 
         # check section in data
         if section not in maint_data["packages"]:
             maint_data["packages"][section] = {}
 
-        if 'upstream_repo' in arg_result:
+        if len(upstream_repo):
             d = {'debian-repo': debian_repo, 'upstream-repo': arg_result['upstream_repo']}
         else:
             d = {'debian-repo': debian_repo}
 
         maint_data["packages"][section][package_name] = d
 
-    else: # add or update
-        if "section" in arg_result:
+    else: #update
+        if len(package_name) == 0:
+            exit()
+        if len(debian_repo) == 0:
+            exit()
+
+        if len(section):
             packages_data = maint_data["packages"][section]
         else:
             for __section in maint_data["packages"]:
@@ -181,10 +199,8 @@ if __name__ == '__main__':
 
         package_data = packages_data[package_name]
         package_data['debian-repo'] = debian_repo
-        if 'upstream_repo' in arg_result:
-            package_data['upstream-repo'] = arg_result['upstream_repo']
-
-        print (package_data)
+        if len(upstream_repo):
+            package_data['upstream-repo'] = upstream_repo
 
     # save to file
     import shutil
