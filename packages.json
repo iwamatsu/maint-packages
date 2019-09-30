@@ -35,8 +35,12 @@
                 "upstream-repo": "https://github.com/google/mozc.git"
             },
             "fbterm": {
-                "debian-repo": "https://salsa.debian.org/debian/fbterm.git"
+                "debian-repo": "https://salsa.debian.org/debian/fbterm.git",
                 "upstream-repo": "https://github.com/iwamatsu/fbterm.git"
+            },
+            "ell": {
+                "debian-repo": "https://salsa.debian.org/debian/ell.git",
+                "upstream-repo": "https://kernel.googlesource.com/pub/scm/libs/ell/ell.git"
             }
         },
         "x": {
