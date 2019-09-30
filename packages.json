@@ -211,6 +211,10 @@
             "sbc": {
                 "debian-repo": "https://salsa.debian.org/bluetooth-team/pybluez.git",
                 "upstream-repo": "https://github.com/pybluez/pybluez.git"
+            },
+            "bluez-tools": {
+                "debian-repo": "https://salsa.debian.org/bluetooth-team/bluez-tools.git",
+                "upstream-repo": "https://github.com/khvzak/bluez-tools.git"
             }
         }
     }
